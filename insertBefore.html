@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+</head>  
+<body>
+    <div>
+        <p>我是段落标签</p>
+    </div>
+    
+    <script type="text/javascript">
+     //c.insertBefore(a,b);
+    //插入：在父级c节点下的子节点b之前插入a节点
+        var div = document.getElementsByTagName('div')[0];
+        var p = document.getElementsByTagName('p')[0];
+        var a = document.createElement('a');
+        a.href = '';
+        div.insertBefore(a,p);
+        var h1 = document.createElement('h1');
+        h1.innerHTML = '我是标题标签';
+        div.insertBefore(h1,a);
+        
+       
+    </script>
+</body>
+</html>

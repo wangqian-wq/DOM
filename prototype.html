@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+</head>  
+<body>
+    <div>123</div> 
+    <p>234</p>
+    <script type="text/javascript">
+        Element.prototype.aaa = 'aaa';
+        HTMLElement.prototype.bbb = 'bbb';
+        HTMLDivElement.prototype.ccc = 'ccc';
+        var div = document.getElementsByTagName('div')[0];
+        var p = document.getElementsByTagName('p')[0];
+        //HTMLParagraphElement
+        console.log(div.ccc);
+        console.log(div.bbb);
+        console.log(div.aaa);
+        console.log(p.aaa);
+        console.log(p.bbb);
+        console.log(p.ccc);
+        
+        //var div = document.getElementsByTagName('div')[0];
+    </script>
+</body>
+</html>
