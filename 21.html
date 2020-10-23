@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+    <style type="text/css">
+       button{
+          outline: none;
+      }
+      .loading{
+          background-color: #ddd;
+          color: #fff;
+      }
+    </style>
+</head>  
+<body>
+    <button >加载更多</button>
+    <script type="text/javascript">
+        var oBtn = document.getElementsByTagName('button')[0];
+    //    IE8及以下的绑定方法
+    //    elem.attachEvent(事件类型， 事件处理函数)
+    oBtn.attachEvent('onclick',function(){
+        //this -> window
+        oBtn.innerHTML = '加载中...';
+        oBtn.className = 'loading';
+
+        setTimeout(function(){
+            oBtn.innerHTML = '加载更多';
+            oBtn.className = '';
+        },2000);
+    });
+    oBtn.addEvent('onclick', test);
+    oBtn.addEvent('onclick', test);
+
+    </script>
+</body>   
+</html>

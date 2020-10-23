@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+    <style type="text/css">
+
+    </style>
+</head>  
+<body>
+    <a href="javascript:;" data-uri="txwz" data-sort="free">天下无贼</a><br />
+    <a href="javascript:;" data-uri="fczlm" data-sort="pay">复仇者联盟</a><br />
+    <a href="javascript:;" data-uri="olbbg" data-sort="free">欧罗巴报告</a><br />
+    <a href="javascript:;" data-uri="plmxs" data-sort="pay">普罗米修斯</a><br />
+    <script type="text/javascript">
+        var links = document.getElementsByTagName('a');
+        for(var i = 0; i < links.length; i++){
+            (function(j){
+                links[j].onclick = function(){
+                    var sort = this.dataset.sort;
+                    var uri = this.dataset.uri;
+                    if(sort === 'free'){
+                        window.open('http://www.baidu.com/' + uri);
+                    }else{
+                        alert('这是付费影片')
+                    }
+                }
+            })(i);
+        }
+    </script>
+</body>   
+</html>

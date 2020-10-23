@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+    <style type="text/css">
+
+    </style>
+</head>  
+<body>
+    <ul id="list">
+
+    </ul>
+    <script type="text/javascript">
+        // document.createDocumentFragment()
+        // 创建文档片段（碎片）
+        var oUI = document.getElementById('list');
+        var oDiv = document.createElement('div');
+        for(var i = 0; i < 10000; i++){
+            var oLi = document.createElement('li');
+            oLi.innerHTML = i + '、这是第' + i + '个项目';
+            oLi.className = 'list-item';
+            oLi.setAttribute('class', 'list-item');
+            oUI.appendChild(oLi);
+            oDiv.appendChild(oLi);
+        }
+        oUI.appendChild(oDiv);
+    </script>
+</body>   
+</html>

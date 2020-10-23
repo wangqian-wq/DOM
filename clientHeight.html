@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+    <style type="text/css">
+        body{
+            margin: 0;
+        }
+    </style>
+</head>  
+<body>
+    <div style="width: 5000px; height: 500px; border: 1px solid #000;"></div>
+    <script type="text/javascript">
+     //window.outerWidth window.outerHeight
+        function getViewportSize(){
+            if(window.innerWidth){
+                return {
+                    width: window.innerWidth,
+                    height: window.innerHeight
+                }
+            }else{
+                
+                   if(document.compatMode === 'BackCompat'){
+                       return{
+                        width: document.body.clientWidth,
+                        height: document.body.clientHeight
+                       }    
+                   }else{
+                       return{
+                        width: document.documentElement.clientWidth,
+                        height: document.documentElement.clientHeight
+                       }
+                       
+                   }
+                }
+                
+        }
+        //document.documentElement.scrollHeight
+        
+       
+    </script>
+</body>   
+</html>

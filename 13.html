@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+    <style type="text/css">
+      .box.active{
+          width: 200px;
+          height: 200px;
+          background-color: red;
+          border-radius: 50%;
+      }
+    </style>
+</head>  
+<body>
+    <div class="box active"></div>
+    <script type="text/javascript">
+        var div = document.getElementsByTagName('div')[0];
+        div.onclick = function(){
+            this.className += ' active';
+        }
+    </script>
+</body>   
+</html>

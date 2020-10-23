@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+    <style type="text/css">
+
+    </style>
+</head>  
+<body>
+    <p data-name="aixiaoye" data-age="18">我叫艾小野</p>
+    <script type="text/javascript">
+    //HTML5 给元素增加了一个data-*属性
+      var p = document.getElementsByTagName('p')[0];
+      console.log(p.dataset);
+      console.log(p.dataset.name);
+      console.log(p.dataset.age);
+      console.log(p.getAttribute('data-name'));
+      console.log(p.getAttribute('data-age'));
+    </script>
+</body>   
+</html>

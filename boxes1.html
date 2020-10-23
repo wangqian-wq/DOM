@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+    <style type="text/css">
+        .box{
+            color: green;
+        }
+    </style>
+</head>  
+<body>
+    <input type="text" name="username"/>
+    <div class="box" name="box">1234</div>
+    <script type="text/javascript">
+       var boxes = document.getElementsByClassName('box');
+       boxes.style.color = 'red';
+       //IE8及以下浏览器不支持
+    </script>
+</body>
+</html>

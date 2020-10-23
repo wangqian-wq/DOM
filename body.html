@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+    <style>
+        *{
+            color: red;
+        }
+    </style>
+</head>  
+<body>
+    <div>
+        <p class="text">123</p>
+        <p>234</p>
+        <h1>345</h1>
+        <input type="text" name = "username" />
+    </div>
+    <p class="text">456</p>
+    <script type="text/javascript">
+       var div = document.getElementsByTagName('div')[0];
+
+      console.log(div);
+       var username = document.getElementsByName('username')[0];
+       console.log(username);
+       var p = div.getElementsByTagName('p')[0];
+       console.log(p);
+       var p = div.getElementsByClassName('text')[0];
+       console.log(p); 
+      //var body = document.getElementsByTagName('body')[0];
+      //var head = document.getElementsByTagName('head')[0];
+      var body = document.body;
+      var head = document.head;
+     var all = document.getElementsByTagName('*');
+     console.log(all);
+    </script>
+</body>
+</html>    

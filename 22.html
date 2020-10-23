@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+    <style type="text/css">
+       button{
+          outline: none;
+      }
+      .loading{
+          background-color: #ddd;
+          color: #fff;
+      }
+    </style>
+</head>  
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <script type="text/javascript">
+    var oLi = document.getElementsByTagName('li'),
+        len = oLi.length,   
+        item;
+    
+    for(var i = 0; i < len; i++){
+        item = oLi[i];
+
+        // item.onclick = function(){
+        //     console.log(i);
+        // }
+
+        item.addEventListener('click', function(){
+            console.log(i);
+        }, false)
+    }
+
+    </script>
+</body>   
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+    <style type="text/css">
+       button{
+          outline: none;
+      }
+      .loading{
+          background-color: #ddd;
+          color: #fff;
+      }
+    </style>
+</head>  
+<body>
+    <button >加载更多</button>
+    <script type="text/javascript">
+        var oBtn = document.getElementsByTagName('button')[0];
+        oBtn.addEventListener('click',function(){
+            console.log(1);
+        },false);
+        oBtn.addEventListener('click',function(){
+            console.log(1);
+        },false);
+
+        oBtn.addEventListener('click', test, false);
+        oBtn.addEventListener('click', test, false);//同一个函数引用，指向同一个空间
+        function test(){
+            console.log(1);
+        }
+    </script>
+</body>   
+</html>

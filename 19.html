@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+    <style type="text/css">
+       button{
+          outline: none;
+      }
+      .loading{
+          background-color: #ddd;
+          color: #fff;
+      }
+    </style>
+</head>  
+<body>
+    <button >加载更多</button>
+    <script type="text/javascript">
+        var oBtn = document.getElementsByTagName('button')[0];
+        //IE9以下不兼容，W3C规范
+        // elem.addEventListener(事件类型， 事件处理函数，false);
+        // oBtn.ONCLICK = Function(){}
+        oBtn.addEventListener('click', function(){
+            this.innerHTML = '加载中...';
+            this.className = 'loading';
+
+            var self = this;
+            setTimeout(function(){
+                self.innerHTML = '加载更多';
+                self.className = '';
+            },2000);   
+        }, false);
+        oBtn.addEventListener('click', function(){
+            console.log('加载更多数据');
+        },false);
+    </script>
+</body>   
+</html>

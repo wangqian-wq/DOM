@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+    <style type="text/css">
+        .title{
+            color: orange;
+        }
+        .area{
+            color: #666;
+        }
+    </style>
+</head>  
+<body>
+    <ul id="list"></ul>
+    <div>
+        <h1></h1>
+    </div>
+    <script type="text/javascript">
+      //parent.replaceChild(new,origin)
+      var div = document.getElementsByTagName('div')[0];
+      var h1 = document.getElementsByTagName('h1')[0];
+      var h2 = document.createElement('h2');
+      div.replaceChild(h2,h1);
+    </script>
+</body>
+</html>

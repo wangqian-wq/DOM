@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>课时1</title>
+    <style type="text/css">
+       button{
+          outline: none;
+      }
+      .loading{
+          background-color: #ddd;
+          color: #fff;
+      }
+    </style>
+</head>  
+<body>
+    <button onclick="test()">加载更多</button>
+    <script type="text/javascript">
+        var oBtn = document.getElementsByTagName('button')[0];
+        function test(){
+            console.log('a');
+        }
+        oBtn.onclick = function(){
+            console.log('b');
+        }
+
+
+    </script>
+</body>   
+</html>
